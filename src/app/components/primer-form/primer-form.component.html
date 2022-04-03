@@ -1,0 +1,17 @@
+
+<h3>Formulario</h3>
+<div>
+    <form [formGroup]="primerForm" (ngSubmit)="onSubmit()" [noValidate]="true">
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text" formControlName="nombre">
+        <br />
+        <div>
+            <app-child-form formControlName="informacion"></app-child-form>
+        </div>
+        <div>
+            <app-custom-form formControlName="contador"></app-custom-form>
+        </div>
+        <br />
+        <button type="submit">Probar formulario</button>
+    </form>
+</div>

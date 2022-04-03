@@ -1,0 +1,8 @@
+<h3>Contador</h3>
+<div [formGroup]="customForm">
+    
+    <label for="cantidad"></label>
+    <input type="number" id="cantidad" formControlName="cantidad" />
+    <button type="button" (click)="onAdd()">agregar+</button>
+    <button type="button"  (click)="onRemove()">quitar-</button>
+</div>

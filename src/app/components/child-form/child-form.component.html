@@ -1,0 +1,13 @@
+
+<h3>Formulario</h3>
+<div>
+    <form [formGroup]="segundoForm" (ngSubmit)="onSubmit($event)">
+        <label for="direccion">Direccion: </label>
+        <input id="direccion" type="text" formControlName="direccion">
+        <br />
+        <label for="numero">Numero: </label>
+        <input id="numero" type="number" formControlName="numero">
+        <br />
+       
+    </form>
+</div>
